@@ -10,7 +10,6 @@ export const Filter = ({ onSetFilter, value }) => {
         placeholder="Type name"
         value={value}
         onChange={onSetFilter}
-        // onChange={evt => onSetFilter(evt.target.value)}
       />
     </>
   );
