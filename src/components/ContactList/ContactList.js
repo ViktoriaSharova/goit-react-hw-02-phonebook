@@ -1,11 +1,11 @@
 import { List, ListItem, ListItemBtn } from './ContactList.styled';
 
-export const ContactList = ({ onDelete, contactInfo }) => {
+export const ContactList = ({ onDelete, filtredContacts }) => {
   return (
     <>
-      {contactInfo.length > 0 && (
+      {filtredContacts.length > 0 && (
         <List>
-          {contactInfo.map(contact => (
+          {filtredContacts.map(contact => (
             <ListItem key={contact.id}>
               <p>
                 {contact.name}: {contact.number}
